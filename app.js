@@ -36,7 +36,7 @@ CookieShops.prototype.calCookiesPerHour = function() {
 
 function cookiesPerHourData(number) {
   console.log('Number: ' + number.nameOfLocation);
-  var cookiesPerHour = this.nameOfLocation.calCookiesPerHour();
+  var cookiesPerHour = nameOfLocation.calCookiesPerHour();
   var numOfCookiesPerDay = document.getElementById(number.nameOfLocation);
   console.log('Number of cookies per day: ' + numOfCookiesPerDay);
   var sum = cookiesPerHourData.reduce(function(a, b){
