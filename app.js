@@ -39,9 +39,6 @@ function cookiesPerHourData(number) {
   var cookiesPerHour = nameOfLocation.calCookiesPerHour();
   var numOfCookiesPerDay = document.getElementById(number.nameOfLocation);
   console.log('Number of cookies per day: ' + numOfCookiesPerDay);
-  var sum = cookiesPerHourData.reduce(function(a, b){
-    return parseInt(a) + parseInt(b);
-  }, 0);
 
   var hourlyArray = [];
 
