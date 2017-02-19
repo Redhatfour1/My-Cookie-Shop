@@ -1,33 +1,129 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Cookie Shop</title>
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"/> -->
-  </head>
-  <body>
-    <main>
+<head>
+  <title>Gourmet Cookies</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+</head>
+<body background="smoked-salmon-cookies.jpg">
+  <main>
+    <section>
       <header>
         <h1>Salmon Cookies</h1>
       </header>
-      <div id="data">
-      <h2>Pike Place</h2>
-        <ul id="pikePlace"></ul>
+      <!-- <h3>Pike Place</h3>
+      <ul id="pikePlace"></ul>
 
-      <h2>SeaTac Airport</h2>
-        <ul id="seaTacAirport"></ul>
+      <h3>SeaTac Airport</h3>
+      <ul id="seaTacAirport"></ul>
 
-      <h2>Southcenter</h2>
-        <ul id="southCenter"></ul>
+      <h3>Southcenter</h3>
+      <ul id="southCenter"></ul>
 
-      <h2>Bellevue Square</h2>
-        <ul id="bellevueSquare"></ul>
+      <h3>Bellevue Square</h3>
+      <ul id="bellevueSquare"></ul>
 
-      <h2>Alki</h2>
-        <ul id="alki"></ul>
-      </div>
-      <table id="tableData"></table>
-      <th></th>
-    </main>
-    <script src="app.js"></script>
-  </body>
+      <h3>Alki</h3>
+      <ul id="alki"></ul> -->
+    </section>
+
+    <div class="space">
+      <h3></h3>
+    </div>
+    <div id="cookiesPerHourData" class="salesData">
+      <h2>Sales Data</h2>
+      <!-- <ul id="salesData">
+      </ul> -->
+      <!-- <table id="salesTable">
+        <thead>
+          <tr>
+            <td>location</td>
+            <td>10AM</td>
+            <td>11AM</td>
+            <td>12PM</td>
+            <td>1PM</td>
+            <td>2PM</td>
+            <td>3PM</td>
+            <td>4PM</td>
+            <td>5PM</td>
+            <td id="total">Total</td>
+          </tr>
+      </thead>
+      </table> -->
+      <table id="myTable" class='main'>
+        <thead>
+          <tr id="time">
+            <td>Locations</td>
+            <td>10:00 AM</td>
+            <td>11:00 AM</td>
+            <td>12:00 PM</td>
+            <td>1:00 PM</td>
+            <td>2:00 PM</td>
+            <td>3:00 PM</td>
+            <td>4:00 PM</td>
+            <td>5:00 PM</td>
+
+            <td id='totals'>Total</td>
+          </tr>
+        </thead>
+        <tbody id = 'body'></tbody>
+      </table>
+
+    </div>
+    <section>
+      <h2>Tables, Forms, Events!</h2>
+
+      <form id="form">
+        <fieldset>
+          <legend>Ssales data for new location</legend>
+
+          <!--make a block-level input  -->
+          <!-- <div> -->
+
+          <!-- </div> -->
+
+          <!--everything else in the form will be inline  -->
+          <label for="price">Minimum # of customers:</label>
+          <input type="number" name="price" min="0" required>
+
+          <label for="price">Maximum # of customers:</label>
+          <input type="number" name="price" min="0" required>
+
+          <label for="price">Average # of cookies:</label>
+          <input type="number" name="price" min="0" required>
+
+          <label for="name">New location name:</label>
+          <input type="text" name="name" required>
+
+          <input type="submit" value="Add the item">
+        </fieldset>
+      </form>
+
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Tax</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body">
+
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+      </table>
+
+      <button id ="data-button">Push for fun!</button>
+
+
+    </section>
+  </main>
+  <script src="sales.js"></script>
+  <script src="forms.js"></script>
+</body>
 </html>
