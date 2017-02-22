@@ -1,6 +1,6 @@
 'use strict';
 var storeArrays = [];
-//var times = ['10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm'];
+var times = ['10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm'];
 
 function Cookieshop(nameOfLocation, min, max, avgCookiesPerCust){
   this.nameOfLocation = nameOfLocation;//location
@@ -52,7 +52,7 @@ Cookieshop.prototype.render = function(){
 //New Cookie Shop Locations;
 new Cookieshop('Pike Place', 17, 88, 5.2);
 new Cookieshop('SeaTac Airport', 6, 24, 1.2);
-new Cookieshop('Souttcenter', 11, 38, 1.9);
+new Cookieshop('Southcenter', 11, 38, 1.9);
 new Cookieshop('Bellevue', 20, 48, 3.3);
 new Cookieshop('Alki', 3, 24, 2.6);
 
