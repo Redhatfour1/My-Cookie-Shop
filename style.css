@@ -37,3 +37,9 @@ h2 {
     border-style: solid;
     padding: 5px 30px 55px;
 }
+td {
+  border-color: #ece1cb;
+  border-style: inset;
+  border-spacing: 5px;
+  padding: 2px;
+}
